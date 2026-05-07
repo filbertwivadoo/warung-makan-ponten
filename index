@@ -1,0 +1,180 @@
+
+<html>
+<head>
+    <title>Warung Mantap bejir - E-Commerce Makanan Sungguh PONTEN</title>
+    <link rel="stylesheet" href="makanan.css">
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="logo">
+            <h1> Warung Mantap Sungguh PONTEN</h1>
+            <p>Makanan Enak Harga Sungguh Murah</p>
+        </div>
+        <nav>
+            <button onclick="bukaHalaman('home')"> Home</button>
+            <button onclick="bukaHalaman('nasi')"> Nasi Goreng</button>
+            <button onclick="bukaHalaman('mie')"> Mie Goreng</button>
+            <button onclick="bukaHalaman('minuman')"> Minuman</button>
+            <button onclick="bukaHalaman('snack')"> Snack</button>
+            <button onclick="bukaHalaman('dessert')"> Dessert</button>
+            <button onclick="bukaHalaman('register')" class="btn-reg">Register</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="halaman aktif">
+            <div class="hero">
+                <h2>Selamat Datang di Warung Mantap Sungguh PONTEN</h2>
+                <p>Silahkan pilih menu makanan yang ada, semuanya bagus, fresh dan pastinya MUANTAPPPP</p>
+            </div>
+        </section>
+
+        <section id="nasi" class="halaman">
+            <h2 class="judul"> Nasi Goreng</h2>
+            <div class="sub-tab">
+                <button class="tab aktif" onclick="gantiSub('nasi', 'spesial')">Spesial</button>
+                <button class="tab" onclick="gantiSub('nasi', 'seafood')">Seafood</button>
+            </div>
+            <div id="nasi-spesial" class="isi-sub aktif">
+                <div class="card"><img src="ng.webp"><div class="isi"><h3>Nasi Goreng Spesial 1</h3><p class="desc">Nasi goreng dengan telur dan ayam.</p><p class="harga">Rp 25.000</p><button class="btn-beli" onclick="beli('Nasi Goreng Spesial 1')"> Beli</button></div></div>
+                <div class="card"><img src="ng1.webp"><div class="isi"><h3>Nasi Goreng Spesial 2</h3><p class="desc">Nasi goreng pakai bakso dan kerupuk.</p><p class="harga">Rp 27.000</p><button class="btn-beli" onclick="beli('Nasi Goreng Spesial 2')"> Beli</button></div></div>
+                <div class="card"><img src="ng2.webp"><div class="isi"><h3>Nasi Goreng Spesial 3</h3><p class="desc">Nasi goreng bumbu kecap manis.</p><p class="harga">Rp 23.000</p><button class="btn-beli" onclick="beli('Nasi Goreng Spesial 3')"> Beli</button></div></div>
+                <div class="card"><img src="ng3.webp"><div class="isi"><h3>Nasi Goreng Spesial 4</h3><p class="desc">Nasi goreng dengan sosis dan telur.</p><p class="harga">Rp 28.000</p><button class="btn-beli" onclick="beli('Nasi Goreng Spesial 4')"> Beli</button></div></div>
+                <div class="card"><img src="ng4.webp"><div class="isi"><h3>Nasi Goreng Spesial 5</h3><p class="desc">Nasi goreng ayam geprek pedas.</p><p class="harga">Rp 30.000</p><button class="btn-beli" onclick="beli('Nasi Goreng Spesial 5')"> Beli</button></div></div>
+                <div class="card"><img src="ng5.webp"><div class="isi"><h3>Nasi Goreng Spesial 6</h3><p class="desc">Nasi goreng komplit plus kerupuk udang.</p><p class="harga">Rp 32.000</p><button class="btn-beli" onclick="beli('Nasi Goreng Spesial 6')"> Beli</button></div></div>
+            </div>
+            <div id="nasi-seafood" class="isi-sub">
+                <div class="card"><img src="ng6.webp"><div class="isi"><h3>Nasi Seafood 1</h3><p class="desc">Nasi goreng dengan udang segar.</p><p class="harga">Rp 35.000</p><button class="btn-beli" onclick="beli('Nasi Seafood 1')"> Beli</button></div></div>
+                <div class="card"><img src="ng7.webp"><div class="isi"><h3>Nasi Seafood 2</h3><p class="desc">Nasi goreng cumi dan ikan.</p><p class="harga">Rp 38.000</p><button class="btn-beli" onclick="beli('Nasi Seafood 2')"> Beli</button></div></div>
+                <div class="card"><img src="ng8.webp"><div class="isi"><h3>Nasi Seafood 3</h3><p class="desc">Nasi goreng kerang hijau.</p><p class="harga">Rp 36.000</p><button class="btn-beli" onclick="beli('Nasi Seafood 3')"> Beli</button></div></div>
+                <div class="card"><img src="ng9.webp"><div class="isi"><h3>Nasi Seafood 4</h3><p class="desc">Nasi goreng mix seafood pedas.</p><p class="harga">Rp 40.000</p><button class="btn-beli" onclick="beli('Nasi Seafood 4')"> Beli</button></div></div>
+                <div class="card"><img src="ng10.webp"><div class="isi"><h3>Nasi Seafood 5</h3><p class="desc">Nasi goreng kepiting saus tiram.</p><p class="harga">Rp 45.000</p><button class="btn-beli" onclick="beli('Nasi Seafood 5')"> Beli</button></div></div>
+                <div class="card"><img src="ng11.webp"><div class="isi"><h3>Nasi Seafood 6</h3><p class="desc">Nasi goreng lobster premium.</p><p class="harga">Rp 50.000</p><button class="btn-beli" onclick="beli('Nasi Seafood 6')"> Beli</button></div></div>
+            </div>
+        </section>
+
+        <section id="mie" class="halaman">
+            <h2 class="judul"> Mie Goreng</h2>
+            <div class="sub-tab">
+                <button class="tab aktif" onclick="gantiSub('mie', 'jawa')">Jawa</button>
+                <button class="tab" onclick="gantiSub('mie', 'pedas')">Pedas</button>
+            </div>
+            <div id="mie-jawa" class="isi-sub aktif">
+                <div class="card"><img src="mj1.webp"><div class="isi"><h3>Mie Jawa 1</h3><p class="desc">Mie goreng khas Jawa dengan kecap.</p><p class="harga">Rp 20.000</p><button class="btn-beli" onclick="beli('Mie Jawa 1')"> Beli</button></div></div>
+                <div class="card"><img src="mj2.webp"><div class="isi"><h3>Mie Jawa 2</h3><p class="desc">Mie goreng dengan sayuran hijau.</p><p class="harga">Rp 22.000</p><button class="btn-beli" onclick="beli('Mie Jawa 2')"> Beli</button></div></div>
+                <div class="card"><img src="mj3.webp"><div class="isi"><h3>Mie Jawa 3</h3><p class="desc">Mie goreng telur dadar renyah.</p><p class="harga">Rp 21.000</p><button class="btn-beli" onclick="beli('Mie Jawa 3')"> Beli</button></div></div>
+                <div class="card"><img src="mj4.webp"><div class="isi"><h3>Mie Jawa 4</h3><p class="desc">Mie goreng bawang goreng banyak.</p><p class="harga">Rp 23.000</p><button class="btn-beli" onclick="beli('Mie Jawa 4')"> Beli</button></div></div>
+                <div class="card"><img src="mj5.webp"><div class="isi"><h3>Mie Jawa 5</h3><p class="desc">Mie goreng dengan suwiran ayam.</p><p class="harga">Rp 25.000</p><button class="btn-beli" onclick="beli('Mie Jawa 5')"> Beli</button></div></div>
+                <div class="card"><img src="mj6.webp"><div class="isi"><h3>Mie Jawa 6</h3><p class="desc">Mie goreng komplit plus kerupuk.</p><p class="harga">Rp 26.000</p><button class="btn-beli" onclick="beli('Mie Jawa 6')"> Beli</button></div></div>
+            </div>
+            <div id="mie-pedas" class="isi-sub">
+                <div class="card"><img src="mj7.webp"><div class="isi"><h3>Mie Pedas 1</h3><p class="desc">Level 1: Sedikit pedas.</p><p class="harga">Rp 22.000</p><button class="btn-beli" onclick="beli('Mie Pedas 1')"> Beli</button></div></div>
+                <div class="card"><img src="mj8.webp"><div class="isi"><h3>Mie Pedas 2</h3><p class="desc">Level 2: Pedas sedang.</p><p class="harga">Rp 23.000</p><button class="btn-beli" onclick="beli('Mie Pedas 2')"> Beli</button></div></div>
+                <div class="card"><img src="mj9.webp"><div class="isi"><h3>Mie Pedas 3</h3><p class="desc">Level 3: Pedas nendang.</p><p class="harga">Rp 24.000</p><button class="btn-beli" onclick="beli('Mie Pedas 3')"> Beli</button></div></div>
+                <div class="card"><img src="mj10.webp"><div class="isi"><h3>Mie Pedas 4</h3><p class="desc">Level 4: Super pedas.</p><p class="harga">Rp 25.000</p><button class="btn-beli" onclick="beli('Mie Pedas 4')"> Beli</button></div></div>
+                <div class="card"><img src="mj11.webp"><div class="isi"><h3>Mie Pedas 5</h3><p class="desc">Level 5: Gila pedas!</p><p class="harga">Rp 26.000</p><button class="btn-beli" onclick="beli('Mie Pedas 5')"> Beli</button></div></div>
+                <div class="card"><img src="mj12.webp"><div class="isi"><h3>Mie Pedas 6</h3><p class="desc">Level 6: Extra cabai rawit.</p><p class="harga">Rp 27.000</p><button class="btn-beli" onclick="beli('Mie Pedas 6')"> Beli</button></div></div>
+            </div>
+        </section>
+
+        <section id="minuman" class="halaman">
+            <h2 class="judul"> Minuman</h2>
+            <div class="sub-tab">
+                <button class="tab aktif" onclick="gantiSub('minuman', 'dingin')">Dingin</button>
+                <button class="tab" onclick="gantiSub('minuman', 'hangat')">Hangat</button>
+            </div>
+            <div id="minuman-dingin" class="isi-sub aktif">
+                <div class="card"><img src="m1.webp"><div class="isi"><h3>Es Jeruk 1</h3><p class="desc">Jeruk peras segar dengan es.</p><p class="harga">Rp 12.000</p><button class="btn-beli" onclick="beli('Es Jeruk 1')"> Beli</button></div></div>
+                <div class="card"><img src="m2.webp"><div class="isi"><h3>Es Mangga 2</h3><p class="desc">Jus mangga manis dan kental.</p><p class="harga">Rp 15.000</p><button class="btn-beli" onclick="beli('Es Mangga 2')"> Beli</button></div></div>
+                <div class="card"><img src="m3.webp"><div class="isi"><h3>Es Teh 3</h3><p class="desc">Teh manis dingin biasa.</p><p class="harga">Rp 8.000</p><button class="btn-beli" onclick="beli('Es Teh 3')"> Beli</button></div></div>
+                <div class="card"><img src="m4.webp"><div class="isi"><h3>Es Alpukat 4</h3><p class="desc">Alpukat dengan susu coklat.</p><p class="harga">Rp 18.000</p><button class="btn-beli" onclick="beli('Es Alpukat 4')"> Beli</button></div></div>
+                <div class="card"><img src="m5.webp"><div class="isi"><h3>Es Kelapa 5</h3><p class="desc">Air kelapa muda segar.</p><p class="harga">Rp 14.000</p><button class="btn-beli" onclick="beli('Es Kelapa 5')"> Beli</button></div></div>
+                <div class="card"><img src="m6.webp"><div class="isi"><h3>Es Cendol 6</h3><p class="desc">Cendol gula aren santan.</p><p class="harga">Rp 16.000</p><button class="btn-beli" onclick="beli('Es Cendol 6')"> Beli</button></div></div>
+            </div>
+            <div id="minuman-hangat" class="isi-sub">
+                <div class="card"><img src="m7.webp"><div class="isi"><h3>Kopi Hitam 1</h3><p class="desc">Kopi tubruk asli.</p><p class="harga">Rp 10.000</p><button class="btn-beli" onclick="beli('Kopi Hitam 1')"> Beli</button></div></div>
+                <div class="card"><img src="m8.webp"><div class="isi"><h3>Teh Hangat 2</h3><p class="desc">Teh saring hangat manis.</p><p class="harga">Rp 8.000</p><button class="btn-beli" onclick="beli('Teh Hangat 2')"> Beli</button></div></div>
+                <div class="card"><img src="m9.webp"><div class="isi"><h3>Coklat Panas 3</h3><p class="desc">Susu coklat hangat.</p><p class="harga">Rp 15.000</p><button class="btn-beli" onclick="beli('Coklat Panas 3')"> Beli</button></div></div>
+                <div class="card"><img src="m10.webp"><div class="isi"><h3>Wedang Jahe 4</h3><p class="desc">Jahe merah hangat.</p><p class="harga">Rp 12.000</p><button class="btn-beli" onclick="beli('Wedang Jahe 4')"> Beli</button></div></div>
+                <div class="card"><img src="m11.webp"><div class="isi"><h3>Susu Kental 5</h3><p class="desc">Susu hangat manis.</p><p class="harga">Rp 11.000</p><button class="btn-beli" onclick="beli('Susu Kental 5')"> Beli</button></div></div>
+                <div class="card"><img src="m12.webp"><div class="isi"><h3>Kopi Susu 6</h3><p class="desc">Kopi dengan susu segar.</p><p class="harga">Rp 14.000</p><button class="btn-beli" onclick="beli('Kopi Susu 6')"> Beli</button></div></div>
+            </div>
+        </section>
+
+        <section id="snack" class="halaman">
+            <h2 class="judul"> Snack</h2>
+            <div class="sub-tab">
+                <button class="tab aktif" onclick="gantiSub('snack', 'gorengan')">Gorengan</button>
+                <button class="tab" onclick="gantiSub('snack', 'kue')">Kue</button>
+            </div>
+            <div id="snack-gorengan" class="isi-sub aktif">
+                <div class="card"><img src="s1.webp"><div class="isi"><h3>Bakwan 1</h3><p class="desc">Bakwan sayur renyah.</p><p class="harga">Rp 5.000</p><button class="btn-beli" onclick="beli('Bakwan 1')"> Beli</button></div></div>
+                <div class="card"><img src="s2.webp"><div class="isi"><h3>Pisang Goreng 2</h3><p class="desc">Pisang goreng keju.</p><p class="harga">Rp 7.000</p><button class="btn-beli" onclick="beli('Pisang Goreng 2')"> Beli</button></div></div>
+                <div class="card"><img src="s3.webp"><div class="isi"><h3>Tahu Isi 3</h3><p class="desc">Tahu isi sayuran.</p><p class="harga">Rp 4.000</p><button class="btn-beli" onclick="beli('Tahu Isi 3')"> Beli</button></div></div>
+                <div class="card"><img src="s4.webp"><div class="isi"><h3>Tempe Mendoan 4</h3><p class="desc">Tempe tipis tepung.</p><p class="harga">Rp 5.000</p><button class="btn-beli" onclick="beli('Tempe Mendoan 4')"> Beli</button></div></div>
+                <div class="card"><img src="s5.webp"><div class="isi"><h3>Risol Mayo 5</h3><p class="desc">Risol isi mayo telur.</p><p class="harga">Rp 8.000</p><button class="btn-beli" onclick="beli('Risol Mayo 5')"> Beli</button></div></div>
+                <div class="card"><img src="s6.webp"><div class="isi"><h3>Cireng 6</h3><p class="desc">Cireng bumbu rujak.</p><p class="harga">Rp 6.000</p><button class="btn-beli" onclick="beli('Cireng 6')"> Beli</button></div></div>
+            </div>
+            <div id="snack-kue" class="isi-sub">
+                <div class="card"><img src="s7.webp"><div class="isi"><h3>Kue Cubit 1</h3><p class="desc">Kue cubit meses.</p><p class="harga">Rp 10.000</p><button class="btn-beli" onclick="beli('Kue Cubit 1')"> Beli</button></div></div>
+                <div class="card"><img src="s8.webp"><div class="isi"><h3>Martabak 2</h3><p class="desc">Martabak manis coklat.</p><p class="harga">Rp 25.000</p><button class="btn-beli" onclick="beli('Martabak 2')"> Beli</button></div></div>
+                <div class="card"><img src="s9.webp"><div class="isi"><h3>Pisang Keju 3</h3><p class="desc">Pisang panggang keju.</p><p class="harga">Rp 15.000</p><button class="btn-beli" onclick="beli('Pisang Keju 3')"> Beli</button></div></div>
+                <div class="card"><img src="s10.webp"><div class="isi"><h3>Roti Bakar 4</h3><p class="desc">Roti bakar coklat.</p><p class="harga">Rp 12.000</p><button class="btn-beli" onclick="beli('Roti Bakar 4')"> Beli</button></div></div>
+                <div class="card"><img src="s11.webp"><div class="isi"><h3>Donat 5</h3><p class="desc">Donat gula halus.</p><p class="harga">Rp 8.000</p><button class="btn-beli" onclick="beli('Donat 5')"> Beli</button></div></div>
+                <div class="card"><img src="s12.webp"><div class="isi"><h3>Kue Lumpur 6</h3><p class="desc">Kue lumpur kentang.</p><p class="harga">Rp 10.000</p><button class="btn-beli" onclick="beli('Kue Lumpur 6')"> Beli</button></div></div>
+            </div>
+        </section>
+
+        <section id="dessert" class="halaman">
+            <h2 class="judul"> Dessert</h2>
+            <div class="sub-tab">
+                <button class="tab aktif" onclick="gantiSub('dessert', 'es')">Es Buah</button>
+                <button class="tab" onclick="gantiSub('dessert', 'puding')">Puding</button>
+            </div>
+            <div id="dessert-es" class="isi-sub aktif">
+                <div class="card"><img src="d1.webp"><div class="isi"><h3>Es Teler 1</h3><p class="desc">Campuran buah susu.</p><p class="harga">Rp 18.000</p><button class="btn-beli" onclick="beli('Es Teler 1')"> Beli</button></div></div>
+                <div class="card"><img src="d2.webp"><div class="isi"><h3>Es Campur 2</h3><p class="desc">Cendol pacar cina.</p><p class="harga">Rp 15.000</p><button class="btn-beli" onclick="beli('Es Campur 2')"> Beli</button></div></div>
+                <div class="card"><img src="d3.webp"><div class="isi"><h3>Es Kacang Merah 3</h3><p class="desc">Kacang merah manis.</p><p class="harga">Rp 16.000</p><button class="btn-beli" onclick="beli('Es Kacang Merah 3')"> Beli</button></div></div>
+                <div class="card"><img src="d4.webp"><div class="isi"><h3>Es Buah Segar 4</h3><p class="desc">Buah potong sirup.</p><p class="harga">Rp 14.000</p><button class="btn-beli" onclick="beli('Es Buah Segar 4')"> Beli</button></div></div>
+                <div class="card"><img src="d5.webp"><div class="isi"><h3>Es Kelapa Muda 5</h3><p class="desc">Kelapa muda es batu.</p><p class="harga">Rp 13.000</p><button class="btn-beli" onclick="beli('Es Kelapa Muda 5')"> Beli</button></div></div>
+                <div class="card"><img src="d6.webp"><div class="isi"><h3>Es Jelly 6</h3><p class="desc">Jelly warna warni.</p><p class="harga">Rp 12.000</p><button class="btn-beli" onclick="beli('Es Jelly 6')"> Beli</button></div></div>
+            </div>
+            <div id="dessert-puding" class="isi-sub">
+                <div class="card"><img src="d7.webp"><div class="isi"><h3>Puding Coklat 1</h3><p class="desc">Puding coklat lembut.</p><p class="harga">Rp 10.000</p><button class="btn-beli" onclick="beli('Puding Coklat 1')"> Beli</button></div></div>
+                <div class="card"><img src="d8.webp"><div class="isi"><h3>Puding Susu 2</h3><p class="desc">Puding susu vanilla.</p><p class="harga">Rp 10.000</p><button class="btn-beli" onclick="beli('Puding Susu 2')"> Beli</button></div></div>
+                <div class="card"><img src="d9.webp"><div class="isi"><h3>Puding Mangga 3</h3><p class="desc">Puding buah mangga.</p><p class="harga">Rp 12.000</p><button class="btn-beli" onclick="beli('Puding Mangga 3')"> Beli</button></div></div>
+                <div class="card"><img src="d10.webp"><div class="isi"><h3>Puding Roti 4</h3><p class="desc">Puding roti karamel.</p><p class="harga">Rp 11.000</p><button class="btn-beli" onclick="beli('Puding Roti 4')"> Beli</button></div></div>
+                <div class="card"><img src="d11.webp"><div class="isi"><h3>Puding Jagung 5</h3><p class="desc">Puding jagung manis.</p><p class="harga">Rp 11.000</p><button class="btn-beli" onclick="beli('Puding Jagung 5')"> Beli</button></div></div>
+                <div class="card"><img src="d12.webp"><div class="isi"><h3>Puding Lapis 6</h3><p class="desc">Puding lapis warna.</p><p class="harga">Rp 13.000</p><button class="btn-beli" onclick="beli('Puding Lapis 6')"> Beli</button></div></div>
+            </div>
+        </section>
+
+        <section id="register" class="halaman">
+            <h2 class="judul"> Daftar Akun Baru</h2>
+            <form id="formDaftar" class="box-form">
+                <label>Nama Lengkap:</label>
+                <input type="text" id="inputNama" placeholder="Contoh : FIlbert Wivaldo">
+                
+                <label>Email:</label>
+                <input type="text" id="inputEmail" placeholder="Contoh : Nagabonar.2834@gmail.com">
+                
+                <label>Password:</label>
+                <input type="password" id="inputPass" placeholder="Buatlah password sesuka hati mu">
+                
+                <button type="submit">Daftar Sekarang</button>
+            </form>
+            <p id="pesanReg" class="teks-pesan"></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p> 1945 Warung Mantap. Dibuat untuk Tuan Sungguh Ponten.</p>
+        <p> Jl. Bambu 67  No. 67  |  +67 6767-6767-6767 |  warungmantapponten.co.id</p>
+    </footer>
+
+    <script src="makanan.js"></script>
+</body>
+</html>

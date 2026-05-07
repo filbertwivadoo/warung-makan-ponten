@@ -1,0 +1,250 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+}
+.header h1 {
+    color: white;
+    margin-bottom: 5px;
+}
+.header p {
+    color: white;
+    font-size: 14px;
+}
+
+
+nav {
+    margin-top: 15px;
+    text-align: center;
+}
+nav button {
+    background-color: white;
+    color: orange;
+    border: 1px solid orange;
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+}
+.btn-reg {
+    background-color: #333;
+    color: white;
+    border: 1px solid #333;
+}
+
+.halaman {
+    display: none;
+    padding: 20px;
+    max-width: 950px;
+    margin: auto;
+}
+.halaman.aktif {
+    display: block;
+}
+
+.judul {
+    text-align: center;
+    color: orange;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sub-tab {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.tab {
+    padding: 8px 20px;
+    margin: 5px;
+    border: 2px solid orange;
+    background-color: white;
+    cursor: pointer;
+}
+.tab.aktif {
+    background-color: orange;
+    color: white;
+}
+
+.isi-sub {
+    display: none;
+}
+.isi-sub.aktif {
+    display: block;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 260px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.card img {
+    width: 100%;
+    height: 170px;
+}
+.isi {
+    padding: 10px;
+    text-align: center;
+}
+.isi h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.desc {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.harga {
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.btn-beli {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    width: 100%;
+    cursor: pointer;
+}
+.btn-beli:hover {
+    background-color: darkorange;
+}
+
+
+.hero {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.hero h2 {
+    color: orange;
+}
+
+.box-form {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+.box-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.box-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+.box-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.box-form button:hover {
+    background-color: darkgreen;
+}
+
+.teks-pesan {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#popupBerhasil {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 9999;
+    display: none;
+}
+
+/* ===== TAMBAHAN BACKGROUND HERO ===== */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.7)
+    );
+    z-index: 1;
+}
+
+.hero h2 {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    font-size: 32px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    position: relative;
+    z-index: 2;
+    color: #f0f0f0;
+    font-size: 16px;
+    margin-top: 12px;
+    max-width: 550px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
